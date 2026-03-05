@@ -116,4 +116,4 @@ Some examples showcasing the exterior of our buildings for same sized gardens:
 Similarly, when drawing the sizes of the garden randomly from uniform distriutions we can get the following example images:
 
 ![ext_ex11](/image/exterior_showcase_rnd_size_1.png)
-![ext_ex22](/image/exterior_showcase_rnd_size_2.png)# nudge
+![ext_ex22](/image/exterior_showcase_rnd_size_2.png)
