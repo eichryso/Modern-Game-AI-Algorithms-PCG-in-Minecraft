@@ -7,7 +7,7 @@ In this repository we provide the nescessary source code for the first assignmen
 
 ## Instructions
 
-In order to run the code the following softwared need to be installed:
+In order to run the code the following software need to be installed:
 
 - Python
 - Numpy
@@ -16,7 +16,7 @@ In order to run the code the following softwared need to be installed:
 - GGDMC HTTP interface mod (v1.8.1)
 - GDPC Python package
 
-In principal our algorithm is able to adapt to the possibilities of the RNGesus. Therefore, we can create a random Minecraft world with the fabric mode installed. In the Minecraft chat (press t) run the following command:
+In principal our algorithm is able to adapt to the possibilities of the RNGesus of the Minecraft world. Therefore, we can create a random Minecraft world with the fabric mode installed. In the Minecraft chat (press t) run the following command:
 
 ```bash
 /buildarea set ~ ~ ~ ~100 ~ ~100
@@ -28,7 +28,7 @@ Clone this repository and run in the terminal:
 python main
 ```
 
-Depending on the hardware this may take some time (usually less tha a minute). When complete the generated house should be properly placed in our build area.
+Depending on the hardware this may take some time (usually less than a minute). When completed, the generated house should be properly placed in our build area.
 
 Some examples of generated houses in different random worlds:
 
@@ -58,7 +58,7 @@ We can test the adaptability of our algorithm to the terrain of the world by run
 python showcase_terrain
 ```
 
-The code scans the world slize and produces a plot of the x-z plane colormapped by the y level. On top, we overlay three candidate regions of varying flatness score to indicate the best, median and worst possible placement for our building. This code can be tested in a totally random world with random building area sizes. When running the algorithm prompts to pass an appropriate name for saving the figures in the ./image folder. 
+The code scans the world slice and produces a plot of the x-z plane colormapped by the y level. On top, we overlay three candidate regions of varying flatness score to indicate the best, median and worst possible placement for our building. This code can be tested in a totally random world with random building area sizes. When running, the algorithm prompts to pass an appropriate name for saving the figures in the ./image folder. 
 
 Some examples showcasing the terrain evaluation:
 
@@ -71,10 +71,10 @@ Some examples showcasing the terrain evaluation:
 
 For the foundation of the building we can run in the terminal:
 ```bash
-python showcase_terrain
+python showcase_fouundation
 ```
 
-The code generated in the building area, similar sized houses, tightly packed together in the build area region. In order to visualize only the foundation of our houses we only generate the floors, walls, floors and windows of our buildings. Some generated examples can be seem in the ./image folder. 
+The code generates  similar sized houses, tightly packed together in the build area region. In order to visualize only the foundation of our houses, we generate only the floors, walls, floors and windows of our buildings. Some generated examples can be seen in the ./image folder. 
 
 Some examples showcasing the foundation of our buildings:
 
@@ -104,7 +104,7 @@ Lastly, to test the exterior structures in our buildings we can run:
 ```bash
 python showcase_exterior
 ```
-Likewise, this code produces random house confugurations in our build area. In order to visualize only the exterior, we generate only the garden rooms of our houses. Since, the exterior structure placements was successive instead of simultaneous (contrary to the interior structure generation) we encountered some issues were the placement rules were not appropriately taken into account. In order to validate the exterior structure placements we allowed for this code to either use similar sized gardens or sizes drawn randomly from uniform dstribution. The later case was useful, as we could easily test a variaty of generated gardens and indentify any possible problems. Some generated examples can be seem in the ./image folder. 
+Likewise, this code produces random house confugurations in our build area. In order to visualize only the exterior, we generate only the garden room of our houses. Since, the exterior structure placements was successive instead of simultaneous (contrary to the interior structure generation) we encountered some issues were the placement rules were not appropriately taken into account. In order to validate the exterior structure placements we allowed for this code to either use similar sized gardens or sizes drawn randomly from uniform dstribution. The later case was useful, as we could easily test a variety of generated gardens and indentify any possible problems. Some generated examples can be seem in the ./image folder. 
 
 
 Some examples showcasing the exterior of our buildings for same sized gardens:
