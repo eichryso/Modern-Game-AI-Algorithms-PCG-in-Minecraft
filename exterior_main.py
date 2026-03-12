@@ -1,9 +1,18 @@
 import random
 from gdpc import Block
-from exterior_structures.helpers import fence_door_position, get_path_coords, build_garden_floor, build_garden_fence, build_garden_fence_door, build_garden_path, build_garden_lights
-from exterior_structures.tree_and_bushes import place_random_bushes, place_random_trees
-from exterior_structures.extra import place_random_crop_region_full, place_garden_flowers, place_random_pond
-
+from exterior_structures import (fence_door_position,
+                                get_path_coords, 
+                                build_garden_floor, 
+                                build_garden_fence, 
+                                build_garden_fence_door, 
+                                build_garden_path, 
+                                build_garden_lights,
+                                place_random_bushes, 
+                                place_random_trees,
+                                place_random_crop_region_full, 
+                                place_garden_flowers, 
+                                place_random_pond
+                                )
 
 def build_garden_room(ED, house_x, house_y, house_z, garden_length, house_width, house_height, showcase_foundation=False):
     """

@@ -3,8 +3,8 @@ import numpy as np
 
 from gdpc import Editor
 
-from foundation.inventory import material
-from exterior_structures.ext_main import build_garden_room 
+from inventory import material
+from exterior_main import build_garden_room 
 
 WALL_MATERIAL = material("wall")
 ROOF_MATERIAL = material("roof")

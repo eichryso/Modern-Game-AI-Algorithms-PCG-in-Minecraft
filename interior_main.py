@@ -1,7 +1,18 @@
 import random
+from interior_structures import (build_bed, 
+                                build_library, 
+                                build_living_room, 
+                                build_fireplace, 
+                                build_carpet, 
+                                build_int_lights, 
+                                placement_loss, 
+                                scan_floor_masks, 
+                                detect_obstacles, 
+                                bed_fits, 
+                                fireplace_fits_with_orientation, 
+                                livingroom_fits, 
+                                is_in_interior)
 
-from interior.interior_structures import build_bed, build_library, build_living_room, build_fireplace, build_carpet, build_int_lights
-from interior.helpers import placement_loss, scan_floor_masks, detect_obstacles, bed_fits, fireplace_fits_with_orientation, livingroom_fits, is_in_interior
 
 def build_furniture(ED, dims, floor_y, house_height, blocked_positions=None, is_top_floor=False):
     """

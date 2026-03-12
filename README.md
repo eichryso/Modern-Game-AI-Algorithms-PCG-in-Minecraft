@@ -25,7 +25,7 @@ In principal our algorithm is able to adapt to the possibilities of the RNGesus 
 Clone this repository and run in the terminal:
 
 ```bash
-python main
+python3 -m main 
 ```
 
 Depending on the hardware this may take some time (usually less than a minute). When completed, the generated house should be properly placed in our build area.
@@ -55,7 +55,7 @@ These files can be run in the terminal after we have defined the building area b
 We can test the adaptability of our algorithm to the terrain of the world by running in the terminal:
 
 ```bash
-python showcase_terrain
+python3 -m showcase_terrain
 ```
 
 The code scans the world slice and produces a plot of the x-z plane colormapped by the y level. On top, we overlay three candidate regions of varying flatness score to indicate the best, median and worst possible placement for our building. This code can be tested in a totally random world with random building area sizes. When running, the algorithm prompts to pass an appropriate name for saving the figures in the ./image folder. 
@@ -71,7 +71,7 @@ Some examples showcasing the terrain evaluation:
 
 For the foundation of the building we can run in the terminal:
 ```bash
-python showcase_fouundation
+python3 -m showcase_foundation
 ```
 
 The code generates  similar sized houses, tightly packed together in the build area region. In order to visualize only the foundation of our houses, we generate only the floors, walls, floors and windows of our buildings. Some generated examples can be seen in the ./image folder. 
@@ -86,7 +86,7 @@ Some examples showcasing the foundation of our buildings:
 Similarly, we can visualize the interior structures generated in our house. We can visualize it in a defined building area by running:
 
 ```bash
-python showcase_interior
+python3 -m showcase_interior
 ```
 
 With this code we produce similar sized, tightly packed houses in our build area reagion. In order to visualize only the interior, we generate only the ground floors for our houses. Some generated examples can be seem in the ./image folder. 
@@ -102,7 +102,7 @@ Some examples showcasing the interior of our buildings:
 Lastly, to test the exterior structures in our buildings we can run:
 
 ```bash
-python showcase_exterior
+python3 -m showcase_exterior
 ```
 Likewise, this code produces random house confugurations in our build area. In order to visualize only the exterior, we generate only the garden room of our houses. Since, the exterior structure placements was successive instead of simultaneous (contrary to the interior structure generation) we encountered some issues were the placement rules were not appropriately taken into account. In order to validate the exterior structure placements we allowed for this code to either use similar sized gardens or sizes drawn randomly from uniform dstribution. The later case was useful, as we could easily test a variety of generated gardens and indentify any possible problems. Some generated examples can be seem in the ./image folder. 
 

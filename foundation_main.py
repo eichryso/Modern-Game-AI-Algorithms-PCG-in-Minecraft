@@ -1,10 +1,9 @@
 from gdpc import Block
 
-from foundation.inventory import material
-from foundation.structure import build_foundation,build_walls, build_stairs, build_windows
-from exterior_structures.helpers import build_door, clear, solid_found
-from interior.int_main import build_furniture
-
+from inventory import material
+from foundation_structures import build_foundation, build_walls, build_stairs, build_windows
+from exterior_structures import build_door, clear, solid_found
+from interior_main import build_furniture
 
 FLOOR_MATERIAL = material("foundation")
 WALL_MATERIAL = material("wall")

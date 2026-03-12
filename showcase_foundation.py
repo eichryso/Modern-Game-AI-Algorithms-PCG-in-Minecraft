@@ -3,11 +3,10 @@ import numpy as np
 
 from gdpc import Block, Editor
 
-from foundation.inventory import material
-from foundation.structure import build_roof
-from foundation.helpers import multi_floor_dimensions, stair_position
-from foundation.found_main import build_floor
-from exterior_structures.ext_main import build_garden_room 
+from inventory import material
+from foundation_structures import build_roof, multi_floor_dimensions, stair_position
+from foundation_main import build_floor
+from exterior_main import build_garden_room 
 
 WALL_MATERIAL = material("wall")
 ROOF_MATERIAL = material("roof")

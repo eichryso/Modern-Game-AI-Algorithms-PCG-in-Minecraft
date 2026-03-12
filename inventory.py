@@ -7,7 +7,6 @@ from gdpc import geometry as geo
 from gdpc import minecraft_tools as mt
 from gdpc import editor_tools as et
 
-
 logging.basicConfig(format="%(name)s - %(levelname)s - %(message)s")
 
 ED = Editor(buffering=True)
